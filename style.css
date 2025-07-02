@@ -43,7 +43,7 @@ nav {
   border-radius: 8px;
 }
 
-header {
+header, footer {
   background: var(--main-color);
   color: white;
 }
@@ -100,8 +100,6 @@ svg {
 }
 footer {
   text-align: center;
-  background: #f8f8f8;
-  color: #555;
 }
 /* Keyframes */
 @keyframes slideIn {
