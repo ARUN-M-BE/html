@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML5 & CSS3 Features</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <header>
+        <h1>🚀 HTML5 + CSS3 Demo Site</h1>
+        <nav>
+            <ul>
+                <li><a href="#semantic">Semantic Tags</a></li>
+                <li><a href="#media">Media</a></li>
+                <li><a href="#graphics">Graphics</a></li>
+                <li><a href="#form">Forms</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Semantic Section -->
+        <section id="semantic" class="fade-in">
+            <h2>🧱 Semantic Tags</h2>
+            <article>
+                <h3>Article Title</h3>
+                <p>This is an <strong>&lt;article&gt;</strong> element.</p>
+            </article>
+            <aside>
+                <p>This is an <strong>&lt;aside&gt;</strong> with related content.</p>
+            </aside>
+            <details>
+                <summary>Click to Expand Details</summary>
+                <p>This is the <strong>&lt;details&gt;</strong> element with a <code>&lt;summary&gt;</code>.</p>
+            </details>
+            <div id="ajax-output"></div>
+        </section>
+
+        <!-- Media Section -->
+        <section id="media" class="fade-in">
+            <h2>🎧 Media Tags</h2>
+            <audio controls>
+                <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg" />
+                Your browser does not support the audio element.
+            </audio>
+            <video controls width="320">
+                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+            </video>
+        </section>
+
+        <!-- Graphics Section -->
+        <section id="graphics" class="fade-in">
+            <h2>🎨 Graphics</h2>
+            <canvas id="boxCanvas" width="200" height="100"></canvas>
+            <svg viewBox="0 0 100 100">
+                <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+            </svg>
+        </section>
+
+        <!-- Form Section -->
+        <section id="form" class="fade-in">
+            <h2>📥 HTML5 Form Elements</h2>
+            <form class="demo-form">
+
+                <label class="label-email">Email: <input type="email" class="input-email" required /></label>
+                <label class="label-date">Date: <input type="date" class="input-date" /></label>
+                <label class="label-color">Color: <input type="color" class="input-color" /></label>
+                <label class="label-range-1">Range: <input type="range" class="input-range1" /></label>
+                <label class="label-search">Search: <input type="search" class="input-search" /></label>
+
+                <label class="label-datalist">Datalist:
+                    <input list="browsers" name="browser" class="input-datalist" />
+                    <datalist id="browsers">
+                        <option value="Chrome">
+                        <option value="Firefox">
+                        <option value="Safari">
+                    </datalist>
+                </label>
+
+                <label class="label-datetime">DateTime Local: <input type="datetime-local"
+                        class="input-datetime" /></label>
+                <label class="label-month">Month: <input type="month" class="input-month" /></label>
+                <label class="label-number">Number: <input type="number" class="input-number" min="0"
+                        max="10" /></label>
+                <label class="label-range-2">Range: <input type="range" class="input-range2" min="1"
+                        max="100" /></label>
+                <label class="label-tel">Tel: <input type="tel" class="input-tel" /></label>
+                <label class="label-time">Time: <input type="time" class="input-time" /></label>
+                <label class="label-url">URL: <input type="url" class="input-url" /></label>
+                <label class="label-week">Week: <input type="week" class="input-week" /></label>
+
+                <label class="label-progress">Progress:
+                    <progress value="60" max="100" class="progress-bar">60%</progress>
+                </label>
+
+                <label class="label-meter">Meter:
+                    <meter value="0.7" class="meter-bar">70%</meter>
+                </label>
+
+                <label class="label-submit">
+                    <input type="submit" value="Submit" class="btn-submit" />
+                </label>
+
+            </form>
+
+        </section>
+        <section id="form" class="slide-in">
+            <h2>📥 HTML5 Form Elements</h2>
+            <form class="html5-form">
+                <label class="field email">Email: <input type="email" required /></label>
+                <label class="field date">Date: <input type="date" /></label>
+                <label class="field color">Color: <input type="color" /></label>
+                <label class="field range1">Range: <input type="range" /></label>
+                <label class="field search">Search: <input type="search" /></label>
+
+                <label class="field datalist">Datalist:
+                    <input list="browsers" name="browser" />
+                    <datalist id="browsers">
+                        <option value="Chrome" />
+                        <option value="Firefox" />
+                        <option value="Safari" />
+                    </datalist>
+                </label>
+
+                <label class="field datetime-local">DateTime Local: <input type="datetime-local" /></label>
+                <label class="field month">Month: <input type="month" /></label>
+                <label class="field number">Number: <input type="number" min="0" max="10" /></label>
+                <label class="field range2">Range 2: <input type="range" min="1" max="100" /></label>
+                <label class="field tel">Tel: <input type="tel" /></label>
+                <label class="field time">Time: <input type="time" /></label>
+                <label class="field url">URL: <input type="url" /></label>
+                <label class="field week">Week: <input type="week" /></label>
+
+                <label class="field progress-label">Progress:
+                    <progress value="60" max="100">60%</progress>
+                </label>
+
+                <label class="field meter-label">Meter:
+                    <meter value="0.7">70%</meter>
+                </label>
+
+                <label class="field submit-label"><input type="submit" value="Submit" /></label>
+            </form>
+        </section>
+
+        <section>
+            <div class="parent">
+                <div class="child1"></div>
+            </div>
+            <div class="parent">
+                <div class="child2"></div>
+            </div>
+            <div class="parent">
+                <div class="child1"></div>
+            </div>
+            <div class="parent">
+                <div class="child2"></div>
+            </div>
+        </section>
+        <section id="javascript-demo">
+            <h2>🧠 JavaScript Arrays, Objects, Functions & AJAX</h2>
+            <pre id="output"></pre>
+        </section>
+
+    </main>
+
+    <footer class="fade-in">
+        <p>© <span id="year"></span> Made with ❤️ by Arun</p>
+    </footer>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+        const canvas = document.getElementById("boxCanvas");
+        const ctx = canvas.getContext("2d");
+        ctx.fillStyle = "#3498db";
+        ctx.fillRect(10, 10, 150, 80);
+    </script>
+    <!-- Link external JS -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
