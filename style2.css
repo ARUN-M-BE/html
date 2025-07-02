@@ -1,0 +1,56 @@
+:root {
+    --main: #3498db;
+    --accent: #2ecc71;
+    --text: #2c3e50;
+  }
+  
+  body {
+    font-family: sans-serif;
+    margin: 2rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: #f9f9f9;
+  }
+  
+  header, footer {
+    background: var(--main);
+    color: white;
+    padding: 1rem;
+    border-radius: 8px;
+  }
+  
+  h1, h3 {
+    margin: 0 0 0.5rem 0;
+  }
+  
+  article {
+    background: white;
+    border: 1px solid #ddd;
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 6px;
+  }
+  
+  details {
+    background: #f4f4f4;
+    padding: 0.5rem;
+    border-radius: 4px;
+    margin-top: 0.5rem;
+  }
+  
+  summary {
+    cursor: pointer;
+    font-weight: bold;
+    color: var(--main);
+  }
+  
+  summary:hover {
+    color: var(--accent);
+  }
+  
+  #ajax-output {
+    padding-top: 1rem;
+    font-family: monospace;
+    white-space: pre-wrap;
+  }
+  
