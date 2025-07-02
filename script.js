@@ -66,8 +66,8 @@ function getid() {
       .then(res => res.json())
       .then(data => {
         const container = document.getElementById("ajax-output");
-        const container2 = document.createElement("div");
-        container.insertAdjacentElement("beforeend", container2);
+        // const container2 = document.createElement("div");
+        // container.insertAdjacentElement("beforeend", container2);
   
         data.forEach(post => {
           // Create <details> structure
@@ -85,8 +85,9 @@ function getid() {
           details.appendChild(summary);
           details.appendChild(body);
           
-          container2.appendChild(atag);
-  
+          // container2.appendChild(atag);
+          
+          container.appendChild(atag);
           container.appendChild(details);
         });
       })
